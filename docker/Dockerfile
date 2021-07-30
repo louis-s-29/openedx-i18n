@@ -25,8 +25,8 @@ RUN mkdir /openedx && chown -R openedx /openedx
 USER openedx
 
 # Checkout code
-ARG EDX_PLATFORM_REPOSITORY=https://github.com/edx/edx-platform.git
-ARG EDX_PLATFORM_VERSION=open-release/lilac.rc1
+ARG EDX_PLATFORM_REPOSITORY=https://github.com/louis-s-29/edx-platform.git
+ARG EDX_PLATFORM_VERSION=open-release/jim22
 RUN mkdir -p /openedx/edx-platform && \
     git clone $EDX_PLATFORM_REPOSITORY --branch $EDX_PLATFORM_VERSION --depth 1 /openedx/edx-platform
 WORKDIR /openedx/edx-platform
